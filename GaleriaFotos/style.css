@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+body {
+    background-image: linear-gradient(
+        to left, rgb(167, 3, 3), rgb(86, 2, 2), rgb(37, 0, 0));
+    z-index: -1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Nosifer', cursive;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.gallery-container {
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px;
+    max-width: 100%;
+
+
+}
+
+.gallery-container .image {
+    width: 350px;
+    border-radius: 5px;
+    border: 5px solid rgba(156, 0, 0, 0.366);
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(57, 0, 0);
+    background-color: rgba(0, 0, 0, 0.455);
+    padding: 25px;
+    margin: 0 auto;
+
+}
+
+.gallery-container .image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.gallery-container .image img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-container .image p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    
+}
